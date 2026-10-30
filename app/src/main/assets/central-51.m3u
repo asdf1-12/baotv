@@ -1,0 +1,107 @@
+#EXTM3U
+# 央视+卫视+港澳台合集，移动网络版，1080p 优先排序
+# 仍是 51 台，无重复，无删台；每组内原源标 1080p 的排在前面，并标 [1080p]，其余按原顺序在后
+# 帧率说明：公开 HLS 不标帧率，国内电视流多为 25fps，手机 60Hz 刷新不会把它变成 60fps
+# 看之前：Clash 里 PROXY 先切到 AUTO，或开全局走机场节点，不要走 Wispbyte-RO，否则 IPTV 容易超时
+#EXTINF:-1 group-title="中央",CCTV-1 综合 [1080p]
+http://69.30.245.50/live/cctv1.m3u8
+#EXTINF:-1 group-title="中央",CCTV-5+ 体育赛事 [1080p]
+https://php.jdshipin.com/TVOD/iptv.php?id=cctv5p
+#EXTINF:-1 group-title="中央",CCTV-6 电影 [1080p]
+http://69.30.245.50/live/cctv6.m3u8
+#EXTINF:-1 group-title="中央",CCTV-13 新闻 [1080p]
+http://go.bkpcp.top/mg/cctv13
+#EXTINF:-1 group-title="中央",CCTV-14 少儿 [1080p]
+http://74.91.26.218:82/live/cctv14hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-16 奥林匹克 [1080p]
+http://74.91.26.218:82/live/cctv16hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-17 农业农村 [1080p]
+http://74.91.26.218:82/live/cctv17hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-2 财经
+http://74.91.26.218:82/live/cctv2hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-3 综艺
+http://74.91.26.218:82/live/cctv3hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-7 国防军事
+http://74.91.26.218:82/live/cctv7hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-8 电视剧
+http://74.91.26.218:82/live/cctv8hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-9 纪录
+https://xykt-fix.github.io/Y77.m3u8
+#EXTINF:-1 group-title="中央",CCTV-10 科教
+http://74.91.26.218:82/live/cctv10hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-11 戏曲
+http://74.91.26.218:82/live/cctv11hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-12 社会与法
+http://74.91.26.218:82/live/cctv12hd.m3u8
+#EXTINF:-1 group-title="中央",CCTV-15 音乐
+http://74.91.26.218:82/live/cctv15hd.m3u8
+#EXTINF:-1 group-title="卫视",北京卫视 [1080p]
+http://go.bkpcp.top/mg/bjws
+#EXTINF:-1 group-title="卫视",天津卫视 [1080p]
+http://39.134.115.163:8080/PLTV/88888910/224/3221225698/index.m3u8
+#EXTINF:-1 group-title="卫视",辽宁卫视 [1080p]
+http://39.134.39.37/PLTV/88888888/224/3221226209/index.m3u8
+#EXTINF:-1 group-title="卫视",黑龙江卫视 [1080p]
+http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
+#EXTINF:-1 group-title="卫视",江苏卫视 [1080p]
+http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226200/index.m3u8
+#EXTINF:-1 group-title="卫视",浙江卫视 [1080p]
+http://39.134.115.163:8080/PLTV/88888910/224/3221225703/index.m3u8
+#EXTINF:-1 group-title="卫视",江西卫视 [1080p]
+http://39.134.115.163:8080/PLTV/88888910/224/3221225705/index.m3u8
+#EXTINF:-1 group-title="卫视",云南卫视 [1080p]
+https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8
+#EXTINF:-1 group-title="卫视",河北卫视
+https://event.pull.hebtv.com/live/live101.m3u8
+#EXTINF:-1 group-title="卫视",内蒙古卫视
+https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8
+#EXTINF:-1 group-title="卫视",安徽卫视
+https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8
+#EXTINF:-1 group-title="卫视",山东卫视
+http://125.210.152.18:9090/live/SDWSHD_H265.m3u8
+#EXTINF:-1 group-title="卫视",湖南卫视
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 group-title="卫视",广东卫视
+https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite.m3u8
+#EXTINF:-1 group-title="卫视",深圳卫视
+https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8
+#EXTINF:-1 group-title="卫视",贵州卫视
+http://183.207.248.71/gitv/live1/G_GUIZHOU/G_GUIZHOU
+#EXTINF:-1 group-title="卫视",四川卫视
+http://39.134.115.163:8080/PLTV/88888910/224/3221225733/index.m3u8
+#EXTINF:-1 group-title="卫视",青海卫视
+http://39.134.115.163:8080/PLTV/88888910/224/3221225727/index.m3u8
+#EXTINF:-1 group-title="卫视",宁夏卫视
+http://39.134.115.163:8080/PLTV/88888910/224/3221225726/index.m3u8
+#EXTINF:-1 group-title="卫视",新疆卫视
+https://klmysjtzb.rcsxzx.com/hls/klmy2.m3u8
+#EXTINF:-1 group-title="卫视",西藏卫视中文
+https://pili-live-hls-zdzz-tv.zzxwcm.cn/zdzz-tv/nqzh.m3u8
+#EXTINF:-1 group-title="卫视",延边卫视
+http://223.110.245.139/PLTV/4/224/3221227008/index.m3u8
+#EXTINF:-1 group-title="卫视",兵团卫视
+http://112.25.48.68/live/program/live/btws/1300000/mnf.m3u8
+#EXTINF:-1 group-title="香港",翡翠台 Jade [1080p]
+http://103.172.187.30:12000/stream/mytv/null-1/master.m3u8
+#EXTINF:-1 group-title="香港",凤凰卫视中文台
+http://223.110.245.139/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
+#EXTINF:-1 group-title="香港",凤凰资讯台
+http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8
+#EXTINF:-1 group-title="香港",天映频道 Celestial Movies
+http://103.58.160.157:8278/720-CELESTIALMOVIES/playlist.m3u8
+#EXTINF:-1 group-title="澳门",澳广视中文频道 TDM Ou Mun
+http://61.244.22.4/ch1/ch1.live/playlist.m3u8
+#EXTINF:-1 group-title="澳门",澳广视澳门卫视 TDM Satellite
+https://live3.tdm.com.mo/ch3/ch3.live/playlist.m3u8
+#EXTINF:-1 group-title="澳门",莲花卫视 Lotus TV
+https://cdn4.skygo.mn/live/disk1/Lotus/HLSv3-FTA/Lotus.m3u8
+#EXTINF:-1 group-title="台湾",TVBS-Asia [1080p]
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1 group-title="台湾",台视 TTV
+http://162.19.247.76:22222/live/taishi/index.m3u8
+#EXTINF:-1 group-title="台湾",台视新闻 TTV News
+https://live.wcetv.com/hls/master-ttvnews.m3u8
+#EXTINF:-1 group-title="台湾",客家电视台 Hakka TV
+https://h5cul1yar48um3t.wcetv.com/hls/hakkatv.m3u8
+#EXTINF:-1 group-title="台湾",大爱一台 DaAi 1
+https://pulltv1.wanfudaluye.com/live/tv1.m3u8

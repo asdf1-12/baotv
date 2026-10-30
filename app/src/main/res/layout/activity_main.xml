@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <Button android:id="@+id/btn_central" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" android:text="央视卫视51" android:textSize="24sp" />
+        <Button android:id="@+id/btn_remote" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" android:text="网络更新" android:textSize="24sp" />
+        <Button android:id="@+id/btn_custom" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" android:text="自定义订阅" android:textSize="24sp" />
+        <Button android:id="@+id/btn_settings" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" android:text="设置" android:textSize="24sp" />
+        <Button android:id="@+id/btn_browser" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" android:text="浏览器" android:textSize="24sp" />
+        <Button android:id="@+id/btn_vod" android:layout_width="0dp" android:layout_height="64dp" android:layout_weight="1" android:text="点播" android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/now_playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="宝视TV：上下键选台，OK 播放全屏，返回回列表，菜单进设置"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#BBBBBB"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/epg_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#FFD54F"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/content_row"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/channel_list"
+            android:layout_width="520dp"
+            android:layout_height="match_parent"
+            android:divider="#333333"
+            android:dividerHeight="1dp" />
+        <SurfaceView
+            android:id="@+id/video_surface"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="#BBBBBB"
+        android:textSize="20sp" />
+</LinearLayout>
